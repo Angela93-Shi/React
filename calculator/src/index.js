@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {HashRouter as Router} from 'react-router-dom';
 import './index.css';
 import App from './App';
-import Calculator from'./Calculator'
 
 ReactDOM.render(
-  <React.StrictMode>
+ 
+  <Router>
     <App />
-    <Calculator/>
-  </React.StrictMode>,
+  </Router>,
+
   document.getElementById('root')
 );
 
