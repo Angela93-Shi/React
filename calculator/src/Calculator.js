@@ -54,13 +54,11 @@ class Calculator extends Component{
         
     }
     render(){
-        const calculatorStyle = {
-            margin: '50px'
-        }
         return(
-            <div style={calculatorStyle}>
+            <div className="calculatorStyle">
+                <h1>Class Component</h1>
                 <div id="calculator">
-                    <h1>Calculator:</h1>
+                    <h2>Calculator:</h2>
                     <div>
                         <div><span>The firstNum:</span><input name="firstName" type="text" onChange={this.handelChange1.bind(this)} defaultValue={this.state.inpValue1}></input></div>
                         <div><span>The operator is:</span><input name="operator" type="text" onChange={this.handelChange2.bind(this)} defaultValue={this.state.inpValue2}></input></div>
