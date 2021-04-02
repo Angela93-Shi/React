@@ -42,11 +42,23 @@ function Calculator_function(){
         }else{
             setShowWarning1(false);
             setShowWarning2(false);
-            setResult(eval(`${inpValue1} ${inpValue2} ${inpValue3}`));
+            // setResult(eval(`${inpValue1} ${inpValue2} ${inpValue3}`));   eval function is harmful
+            if((inpValue2) == '+'){
+                const result_num = Number(inpValue1) + Number(inpValue3)
+                setResult(result_num)
+            }else if((inpValue2) == '-'){
+                const result_num = Number(inpValue1) - Number(inpValue3)
+                setResult(result_num)
+            }else if((inpValue2) == '*'){
+                const result_num = Number(inpValue1) * Number(inpValue3)
+                setResult(result_num)
+            }else if((inpValue2) == '/'){
+                const result_num = Number(inpValue1) / Number(inpValue3)
+                setResult(result_num)
+            }
         }
    
-        // this.setState({result:this.state.firstNum + this.state.secondNum})
-        
+        // this.setState({result:this.state.firstNum + this.state.secondNum})       
     }
     return(
         <div className="calculatorStyle">
