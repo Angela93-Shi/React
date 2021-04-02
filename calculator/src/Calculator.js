@@ -47,7 +47,20 @@ class Calculator extends Component{
         }else{
             this.setState({showWarning1:false})
             this.setState({showWarning2:false})
-            this.setState({result:eval(`${this.state.inpValue1} ${this.state.inpValue2} ${this.state.inpValue3}`)})
+            //this.setState({result:eval(`${this.state.inpValue1} ${this.state.inpValue2} ${this.state.inpValue3}`)})   eval is harmful
+            if((this.state.inpValue2) == '+'){
+                const result_num = Number(this.state.inpValue1) + Number(this.state.inpValue3)
+                this.setState({result:result_num})
+            }else if((this.state.inpValue2) == '-'){
+                const result_num = Number(this.state.inpValue1) - Number(this.state.inpValue3)
+                this.setState({result:result_num})
+            }else if((this.state.inpValue2) == '*'){
+                const result_num = Number(this.state.inpValue1) * Number(this.state.inpValue3)
+                this.setState({result:result_num})
+            }else if((this.state.inpValue2) == '/'){
+                const result_num = Number(this.state.inpValue1) / Number(this.state.inpValue3)
+                this.setState({result:result_num})
+            }
         }
    
         // this.setState({result:this.state.firstNum + this.state.secondNum})
