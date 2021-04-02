@@ -36,6 +36,6 @@ button[disabled]{
 h1{
   color:#052077;
 }
-calculatorStyle{
-  margin: '50px'
+.calculatorStyle{
+  margin:50px;
 }
