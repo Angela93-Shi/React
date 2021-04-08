@@ -25,6 +25,7 @@
 }
 .ul li {
   display: none;
+  /* position: relative; */
 }
 .ul li img {
   width: 100%;
@@ -83,7 +84,7 @@
   position: absolute;
   bottom: 0;
   height: 60px;
-  width: 100%;
+  width: 440px;
   background: #000;
   opacity: 0.5;
 }
