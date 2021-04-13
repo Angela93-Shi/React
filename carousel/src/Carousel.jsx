@@ -23,8 +23,8 @@ class ReactCarousel extends Component{
                 text:'image four',
               },
               {
-                img:'./images/3.jpeg',
-                text:'image three',
+                img:'./images/5.jpeg',
+                text:'image five',
               },
                 // './images/1.jpeg',
                 // './images/2.jpeg',
@@ -41,6 +41,7 @@ class ReactCarousel extends Component{
       const _this = this
         return (
             <div className="ReactCarousel">
+              <h2>I'm write by Class Component</h2>
                 <div className="contain" 
                      onMouseEnter={()=>{this.stop()}} //鼠标进入停止自动播放
                      onMouseLeave={()=>{this.start()}}  //鼠标退出自动播放
@@ -85,7 +86,7 @@ class ReactCarousel extends Component{
                                       className={index === _this.state.showIndex ? 'active' : ''} 
                                       onClick={()=>{_this.change(index);}} >
                                       <img src={require(value.img + '').default} alt="thumbnail" />
-                                      <div className="thumbnail_text"><text>{value.text}</text></div>
+                                      <div className="thumbnail_text">{value.text}</div>
                                   </li>)
                               })
                           }
