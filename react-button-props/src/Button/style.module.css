@@ -1,0 +1,28 @@
+.button{
+    padding:12px 48px;
+    background-color: rgb(0, 89, 255);
+    border-radius: 24px;
+    outline:none;
+    border:none;
+    font-size: 16px;
+    color:white;
+}
+.red{
+    background-color: rgb(218, 40, 9);
+}
+.black{
+    background-color: rgba(0, 0, 0);
+}
+.white_back{
+    border:2px solid rgb(0, 89, 255);
+    background:none;
+    color:rgb(0, 89, 255);
+}
+.white_back.red{
+    border:2px solid rgb(218, 40, 9);
+    color:rgb(218, 40, 9);
+}
+.white_back.black{
+    border:2px solid rgba(0, 0, 0);
+    color: rgba(0, 0, 0);
+}

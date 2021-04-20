@@ -1,0 +1,15 @@
+main{
+  width:100vw;
+  height:100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.btn_groups{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap:24px;
+  row-gap: 24px;
+  align-content: center;
+  justify-content: center;
+}
